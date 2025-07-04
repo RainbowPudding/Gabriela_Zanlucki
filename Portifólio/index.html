@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Gabriela Zanlucki</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- para puxar o arquivo de estilo-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--pegar a fonte do site do google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>   <!-- para funcionar o formulário, encaminhando para o meu email as mensagens preenchidas no form-->
+    <script>
+        (function(){
+            emailjs.init("vqUWzRt3_waRJifqU");  // meu id publico do site do emailjs
+        })();
+    </script>
+
+
+</head>
+
+<body>
+
+<script src="script.js"></script> <!--puxar o arquivo de javascript-->
+
+
+<div id="desktop">  <!--aqui estão os ícones da área de trabalho, todos os icones de licença gratuita, do site flaticon-->
+    <div class="icone" onclick="abrirJanela('sobre')">
+        <img src="imagens/sobremim.png" alt="Sobre Mim" />
+        <p>Sobre Mim</p>
+    </div>
+    
+    <div class="icone" onclick="abrirJanela('formacao')">
+        <img src="imagens/formacao.png" alt="Formação" />
+        <p>Formação</p>
+    </div>
+    
+    <div class="icone" onclick="abrirJanela('portfolio')">
+        <img src="imagens/portfolio.png" alt="Portfólio" />
+        <p>Portfólio</p>
+    </div>
+    
+    <div class="icone" onclick="abrirJanela('contato')">
+        <img src="imagens/contato.png" alt="Contato" />
+        <p>Contato</p>
+    </div>
+</div>
+
+<!-- sobre mim ; hobbies-->
+<div id="janelaSobre" class="janela">
+    
+    <div class="barraTitulo">   <!-- barrinha da parte de cima, para puxar os comandos do javascript de fechar janela, etc. Igual em todas as janelas, mudando apenas o título-->
+        <span class="titulo">Sobre Mim</span>
+        <div class="botoes-controle">
+            <button onclick="minimizarJanela('sobre')">–</button>
+            <button onclick="aumentarJanela('sobre')">□</button>
+            <button class="fechar" onclick="fecharJanela('sobre')">x</button>
+        </div>
+    </div>
+    
+    <div class="conteudoJanela">  <!-- onde estão as escritas da janela-->
+        <div class ="conteudoSobre"><img src="imagens/avatar.png" alt="Avatar" /></div>  <!-- class apenas para essa imagem, pois queria um fundo degrade no avatar -->
+        <br>
+        <h1>Gabriela Zanlucki</h1>
+        <br>
+            <p><strong>Bem-vindo(a) ao meu Portfólio pessoal!</strong> Sou Gabriela Zanlucki Carvalho, moro no interior de São Paulo, na Estância Turística de Avaré. Atualmente, sou estudante de ADS 💜 na Uninter. </p>
+            <br>
+            <br>
+            <p>Desde pequena, sempre fui fascinada pelas tecnologias que cercavam meu pequeno mundinho. Meu interesse teve como introdução os jogos eletrônicos, principalmente se tratando do Playstation 2 e o Nintendo DS, meus primeiros consoles 🎮</p>
+            <br>
+            <p>Com isso, despertei minha curiosidade pela <strong>programação e design</strong>.</p>
+            <br>
+            <p>Tive meu primeiro contato com o HTML através da personalizações de blogs - muito populares nos anos 2000 - principalmente com a chegada do Tumblr.</p>
+            <br>
+            <p>Além disso, tenho alta conexão com a música e a arte. Toco alguns instrumentos - como guitarra e teclado - e me aventuro nas diversas expressões de arte, como desenho, pintura, escultura, pontilhismo e outras.</p>
+    </div>
+    <div class="redimensionar"></div>  <!--aqui puxa o quadradinho que fica embaixo, para possibilitar arrastar e aumentar a janela-->
+</div>
+
+
+<!-- formação ; experiência -->
+<div id="janelaFormacao" class="janela">
+    <div class="barraTitulo">
+        <span class="titulo">Formação</span>
+        <div class="botoes-controle">
+            <button onclick="minimizarJanela('formacao')">–</button>
+            <button onclick="aumentarJanela('formacao')">□</button>
+            <button class="fechar" onclick="fecharJanela('formacao')">x</button>
+        </div>
+    </div>
+    <div class="conteudoJanela">
+
+        <h3>📚 Formação Acadêmica</h3>
+        <br>
+            <div class="projeto">    <!--class projeto para deixar o fundo com o quadradinho branco-->
+            <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+            <p><strong>Instituição:</strong> Centro Universitário Internacional UNINTER</p>
+            <p><strong>Período:</strong> 07/2024 - atualmente (em andamento)</p>
+            </div>     
+            <br>
+        <h3>💼 Experiência Profissional</h3>
+        <br>
+            <div class="projeto">
+            <p><strong>Estabelecimento:</strong> 2° Tabelião de Notas e de Protesto de Letras e Títulos de Avaré-SP</p>
+            <p><strong>Cargo:</strong> Escrevente Cartorária</p>
+            <br>
+            <p><strong>Funções:</strong> </p>
+            <ul>
+                <li>Atendimento no balcão de reconhecimento de firmas, autenticações, escrituras e protesto de títulos.</li>
+                <li>Confecção de certidões e lavratura de escrituras.</li>
+                <li>Auxílio de manutenção em servidores e aparelhos.</li>
+            </ul>
+            <p><strong>Período:</strong> 10/2020 - 05/2025</p>
+            </div> 
+            
+        <br>
+        <h3>🌍 Idiomas</h3>
+        <br>
+
+        <div class="projeto">
+        <p><strong>Português:</strong> Nativo</p>
+        <p><strong>Inglês:</strong> Avançado</p>
+        <p><strong>Espanhol:</strong> Básico</p>
+        </div>
+
+        <br>
+    
+        <h3>💡 Conhecimentos Técnicos e Estudos em Progresso</h3>
+        <br>
+        
+        <div class="projeto">
+            <div class="conteudoEstudo">  <!-- class só para essas imagens ficarem pequenas-->
+                <img src="imagens/Logo-Python.png" alt="Python" />
+                <img src="imagens/Logo-Flutter.png" alt="Flutter" />
+                <img src="imagens/Logo-SQL.png" alt="SQL" />
+                <img src="imagens/Logo-JavaScript.png" alt="JavaScript" />
+                <img src="imagens/Logo-Java.png" alt="Java" />
+                <img src="imagens/Logo-HTML.png" alt="HTML" />
+                <img src="imagens/Logo-CSS.png" alt="CSS" />
+            </div>
+        </div>    
+    </div>
+
+    <div class="redimensionar"></div>
+</div>
+
+<!--portfolio ; projetos -->
+<div id="janelaPortfolio" class="janela">
+    <div class="barraTitulo">
+        <span class="titulo">Portfólio</span>
+        <div class="botoes-controle">
+            <button onclick="minimizarJanela('portfolio')">–</button>
+            <button onclick="aumentarJanela('portfolio')">□</button>
+            <button class="fechar" onclick="fecharJanela('portfolio')">x</button>
+        </div>
+    </div>
+    <div class="conteudoJanela">
+        <h3>🎨 Meus Projetos Pessoais</h3>
+        <br>
+        
+        <div class="projeto">
+            <h4>Cálculo de Pix</h4>
+            <img src="imagens/pix.png" alt="Interface- Cálculo de Pix" />
+            <p><strong>Tecnologia:</strong> Python</p>
+            <p><strong>Descrição:</strong> Aplicativo para gerenciamento de pagamentos por PIX nos serviços do balcão de Reconhecimento de Firmas e Autenticações.</p>
+            <div class="links-projeto">
+                <a href="https://github.com/RainbowPudding/CalculoPix" target="_blank"> Clique para ver no GitHub</a> <!-- blank para abrir na outra página-->
+            </div>
+        </div>
+        <br>
+
+        <div class="projeto">
+            <h4>Cálculo - Pagamento Hora Extra</h4>
+            <img src="imagens/horaextra.png" alt="Interface- Cálculo de Hora Extra" />
+            <p><strong>Tecnologia:</strong> Python</p>
+            <p><strong>Descrição:</strong> Aplicação voltada para o auxílio da rotina de cálculo de um escritório de contabilidade, onde é calculado automaticamente o valor da hora extra.</p>
+            <div class="links-projeto">
+                <a href="https://github.com/RainbowPudding/CalculoDSR" target="_blank"> Clique para ver no GitHub</a>
+            </div>
+        </div>
+        <br>
+
+
+        <h3>🎓 Projetos Acadêmicos</h3>
+        <br>
+        
+        <div class="projeto">
+            <h4>Cofrinho</h4>
+            <p><strong>Tecnologia:</strong> Java</p>
+            <p><strong>Descrição:</strong> Projeto da disciplina de Programação Orientada a Objetos.</p>
+            <div class="links-projeto">
+                <a href="https://github.com/RainbowPudding/Cofrinho-Java" target="_blank"> Clique para ver no GitHub</a>
+            </div>
+        </div>
+
+        <div class="projeto">
+            <h4>Portfólio Pessoal</h4>
+            <p><strong>Tecnologia:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Descrição:</strong> Este próprio site. Projeto da disciplina de Fundamentos da Programação Web.</p>
+            <div class="links-projeto">
+                <a href="https://github.com/RainbowPudding/Portfolio-pessoal" target="_blank"> Clique para ver no GitHub</a>
+            </div>
+        </div>
+        <br>
+
+        </div>
+<div class="redimensionar"></div>
+</div>
+
+
+
+<!-- contato -->
+<div id="janelaContato" class="janela">
+    <div class="barraTitulo">
+        <span class="titulo">Contato</span>
+        <div class="botoes-controle">
+            <button onclick="minimizarJanela('contato')">–</button>
+            <button onclick="aumentarJanela('contato')">□</button>
+            <button class="fechar" onclick="fecharJanela('contato')">x</button>
+        </div>
+    </div>
+    <div class="conteudoJanela">
+        <h3>Entre em Contato</h3>
+
+            <form id="formContato" class="formContato">
+                <div class="form">
+                    <label for="nome">👤 Nome Completo:</label>
+                    <input type="text" id="nome" name="from_name" required placeholder="Digite seu nome completo"> <!-- aqui é configurado para bater com o script pronto do EmailJS, possibilitando o recebimento das mensagens no meu e-mail -->
+                </div>
+
+                <div class="form">
+                    <label for="email">📧 Email:</label>
+                    <input type="email" id="email" name="reply_to" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form">
+                    <label for="mensagem">💬 Mensagem:</label>
+                    <textarea id="mensagem" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                </div>
+
+                <div class="form">
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </div>
+            </form>
+
+
+    </div>
+    <div class="redimensionar"></div>
+</div>
+    
+    
+
+
+
+
+<div class="barraTarefas">  <!-- aqui para parecer o menu do Windows, onde você pode clicar e ter alguns atalhos-->
+    <div class="botaoIniciar" onclick="alternarMenuIniciar()">
+        <img src="imagens/lua.png" alt="Menu Iniciar" />
+    </div>
+    
+    <div class="barraPesquisa"></div> <!-- apenas decorativo -->
+    <div class="separadorBarra"></div> <!-- apenas decorativo -->
+
+    <div class="botoesBarra" id="botoesBarra"></div>     <!-- botões das janelas que estão abertas -->
+    
+    <div class="separadorBarra"></div> <!-- apenas decorativo -->
+    <div class="relogio" id="relogio"></div> 
+    
+</div>
+
+<!-- menu iniciar, onde ficam os atalhos caso clicado no botão iniciar -->
+<div class="menuIniciar" id="menuIniciar">
+    <div class="cabecalhoMenu">
+        Gabriela Zanlucki
+    </div>
+    <div class="itemMenu" onclick="abrirJanela('sobre'); fecharMenuIniciar();">
+        <img src="imagens/sobremim.png" alt="Sobre Mim" />Sobre Mim
+    </div>
+    <div class="itemMenu" onclick="abrirJanela('formacao'); fecharMenuIniciar();">
+        <img src="imagens/formacao.png" alt="Formação" /> Formação
+    </div>
+    <div class="itemMenu" onclick="abrirJanela('portfolio'); fecharMenuIniciar();">
+        <img src="imagens/portfolio.png" alt="Portfólio" /> Portfólio
+    </div>
+    <div class="itemMenu" onclick="abrirJanela('contato'); fecharMenuIniciar();">
+        <img src="imagens/contato.png" alt="Contato" /> Contato
+    </div>
+</div>
+
+
+</body>
+
+</html>
